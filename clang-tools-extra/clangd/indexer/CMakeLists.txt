@@ -4,7 +4,10 @@ set(LLVM_LINK_COMPONENTS
     Support
     )
 
-add_clang_executable(clangd-indexer
+# add_clang_executable(clangd-indexer
+#   IndexerMain.cpp
+#   )
+add_clang_tool(clangd-indexer
   IndexerMain.cpp
   )
 
